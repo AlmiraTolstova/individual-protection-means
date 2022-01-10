@@ -3,26 +3,30 @@ import './App.css';
 import Button from 'react-bootstrap/Button';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Sidebar from "./components/Sidebar/Sidebar";
+import {Container} from "react-bootstrap";
+import Home from "./forms/Home/Home";
 
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <Home/>
+            {/*<header className="App-header">*/}
+            {/*    <img src={logo} className="App-logo" alt="logo"/>*/}
+            {/*    <p>*/}
+            {/*        Edit <code>src/App.js</code> and save to reload.*/}
+            {/*    </p>*/}
+            {/*    <a*/}
+            {/*        className="App-link"*/}
+            {/*        href="https://reactjs.org"*/}
+            {/*        target="_blank"*/}
+            {/*        rel="noopener noreferrer"*/}
+            {/*    >*/}
+            {/*        Learn React*/}
+            {/*    </a>*/}
+            {/*</header>*/}
             <Footer/>
         </div>
     );
