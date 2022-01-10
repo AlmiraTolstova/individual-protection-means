@@ -1,0 +1,13 @@
+@import '../../color-style';
+
+
+.footer{
+  flex: 0 0 auto;
+  padding: 24px;
+  background-color: $blue3;
+}
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
