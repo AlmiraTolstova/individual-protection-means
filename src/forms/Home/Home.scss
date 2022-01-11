@@ -1,9 +1,13 @@
 @import "../../color-style";
+.home{
+  background-color:$gray5 ;
+}
 .home__container{
   display: flex;
  flex-direction: column;
  justify-content: space-between;
  height: 100vh;
+  padding-top: 24px;
 }
 .home__col1{
 
