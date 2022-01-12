@@ -1,18 +1,27 @@
 @import "../../color-style";
-.home{
-  background-color:$gray5 ;
+
+.home {
+  background-color: $gray5;
 }
-.home__container{
+
+.home__container {
   display: flex;
- flex-direction: column;
- justify-content: space-between;
- height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   padding-top: 24px;
 }
-.home__col1{
 
+.home__col1 {
   background-color: $gray6;
 }
-.home__col2{
-  background-color: $gray1;
+
+.home__col2 {
+  background-color: $gray6;
+}
+
+.home__block1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
