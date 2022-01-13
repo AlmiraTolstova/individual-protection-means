@@ -9,6 +9,7 @@ import Home from "./forms/Home/Home";
 import {makeStyles} from "@mui/styles";
 import {Typography} from "@mui/material";
 import React from "react";
+import SignUp from "./forms/SignUp/SignUp";
 
 const useStyle=makeStyles({
     helloThereStyle:{
@@ -22,6 +23,7 @@ function App() {
         <div className="App">
             <Header/>
             <Home/>
+            <SignUp/>
             <Footer/>
         </div>
     );

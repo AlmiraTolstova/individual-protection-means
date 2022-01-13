@@ -10,6 +10,7 @@ import {PersonAddAlt1} from "@mui/icons-material";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import SignIn from "../SignIn/SignIn";
+import SignUp from "../SignUp/SignUp";
 
 
 // const useStyle=makeStyles({
@@ -58,7 +59,9 @@ export default function Home() {
                         </Button>
                     </div>
                     <SignIn/>
+
                 </Col>
+
             </Row>
         </Container>
         </div>
