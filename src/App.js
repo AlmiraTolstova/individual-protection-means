@@ -6,9 +6,18 @@ import Footer from "./components/Footer/Footer";
 import Sidebar from "./components/Sidebar/Sidebar";
 import {Container} from "react-bootstrap";
 import Home from "./forms/Home/Home";
+import {makeStyles} from "@mui/styles";
+import {Typography} from "@mui/material";
+import React from "react";
 
-
+const useStyle=makeStyles({
+    helloThereStyle:{
+        fontsize:'20px',
+        color:"black"
+    }
+})
 function App() {
+    const classes=useStyle();
     return (
         <div className="App">
             <Header/>
