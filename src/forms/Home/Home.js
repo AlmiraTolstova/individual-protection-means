@@ -9,6 +9,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import {PersonAddAlt1} from "@mui/icons-material";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import SignIn from "../SignIn/SignIn";
 
 
 // const useStyle=makeStyles({
@@ -56,6 +57,7 @@ export default function Home() {
                             Нормы выдачи
                         </Button>
                     </div>
+                    <SignIn/>
                 </Col>
             </Row>
         </Container>
