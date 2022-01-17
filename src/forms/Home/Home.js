@@ -11,6 +11,7 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
+import EmployeesCards from "../../components/EmployeesCards/EmployeesCards";
 
 
 // const useStyle=makeStyles({
@@ -36,17 +37,26 @@ theme.typography.h3 = {
 export default function Home() {
     // const classes=useStyle();
     return (
-
         <div className='home'>
         <Container className='home__container'>
             <Row>
                 <Col className='' sm={3}>
-                    <Sidebar/></Col>
+                    <Sidebar/>
+                </Col>
                 <Col className='home__col2' sm={9}>
                     <div className='home__block1'>
                     <h1 className='home__h1'>СКЛАД ТЕХНИЧЕСКОЙ СЛУЖБЫ</h1>
                     <SearchComponent/>
                     </div>
+                    <Typography
+                        component="h1"
+                        variant="h6"
+                        align="center"
+                        color="text.primary"
+                        gutterBottom
+                    >
+                        СКЛАД ТЕХНИЧЕСКОЙ СЛУЖБЫ
+                    </Typography>
                     <div className='home__block2'>
                         <Button variant="outlined" startIcon={<PersonAddAlt1 />}>
                             Прием нового сотрудника
@@ -64,6 +74,7 @@ export default function Home() {
 
             </Row>
         </Container>
+=
         </div>
     )
 }

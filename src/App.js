@@ -10,6 +10,10 @@ import {makeStyles} from "@mui/styles";
 import {Typography} from "@mui/material";
 import React from "react";
 import SignUp from "./forms/SignUp/SignUp";
+import Pricing2 from "./forms/Employees/Employees";
+import Pricing from "./components/EmployeesCards/EmployeesCards"
+import SignIn from "./forms/SignIn/SignIn";
+import CompanyEmployees from "./forms/CompanyEmployees/CompanyEmployees";
 
 const useStyle=makeStyles({
     helloThereStyle:{
@@ -23,7 +27,11 @@ function App() {
         <div className="App">
             <Header/>
             <Home/>
+            <SignIn/>
             <SignUp/>
+            <Pricing2/>
+            <Pricing/>
+            <CompanyEmployees/>
             <Footer/>
         </div>
     );
