@@ -2,9 +2,11 @@ import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import {Button, createTheme, Typography} from "@mui/material";
-import SearchComponent from "../../components/Search/Search";
-
+import "../../components/Search/Search.scss"
 import Pricing from "../../components/EmployeesCards/EmployeesCards";
+import SearchComponent from "../../components/Search/Search";
+import "./CompanyEmployees.scss"
+import Orders from "../../components/Tables/Employees";
 
 
  function CompanyEmployees() {
@@ -19,17 +21,18 @@ import Pricing from "../../components/EmployeesCards/EmployeesCards";
                         <div className='employees__block1'>
                             <Typography
                                 component="h1"
-                                variant="h6"
-                                align="left"
-                                color="text.primary"
-                                gutterBottom
+                                variant="h5"
                             >
                                 СОТРУДНИКИ
                             </Typography>
                             <SearchComponent/>
                         </div>
+                        <div className='employees__block2'>
                         <Pricing/>
+                        </div>
                     </Col>
+
+<Orders/>
 
                 </Row>
             </Container>

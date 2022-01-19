@@ -1,0 +1,21 @@
+@import "../../color-style";
+
+.employees {
+    background-color: $gray5;
+}
+
+.employees__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 24px;
+}
+.employees__block1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.employees__block2{
+    margin-top: 24px;
+}

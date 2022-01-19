@@ -1,6 +1,5 @@
-.search__btn{
-  margin-left: 8px;
-}
-.search__input{
-  height: 58px;
+.search__container{
+display: block;
+  flex-direction: row;
+  justify-content: space-between;
 }

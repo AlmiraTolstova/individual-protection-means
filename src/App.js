@@ -14,6 +14,7 @@ import Pricing2 from "./forms/Employees/Employees";
 import Pricing from "./components/EmployeesCards/EmployeesCards"
 import SignIn from "./forms/SignIn/SignIn";
 import CompanyEmployees from "./forms/CompanyEmployees/CompanyEmployees";
+import BtnHome from "./components/Button/BtnWarehouse";
 
 const useStyle=makeStyles({
     helloThereStyle:{
@@ -29,8 +30,6 @@ function App() {
             <Home/>
             <SignIn/>
             <SignUp/>
-            <Pricing2/>
-            <Pricing/>
             <CompanyEmployees/>
             <Footer/>
         </div>
