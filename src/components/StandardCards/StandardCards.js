@@ -14,18 +14,18 @@ import '../../color-style.scss'
 
 const tiers = [
     {
-        title: 'Новый сотрудник',
+        title: 'Справочник ТОН',
         description: [
             '10 users included',
             '2 GB of storage',
             'Help center access',
             'Email support',
         ],
-        buttonText: 'Добавить',
+        buttonText: 'Смотреть',
         buttonVariant: 'outlined',
     },
     {
-        title: 'Релокация сотрудника',
+        title: 'Штатное расписание',
         description: [
             '20 users included',
             '10 GB of storage',
@@ -33,22 +33,22 @@ const tiers = [
             'Priority email support',
         ],
         buttonText: 'Изменить',
-        buttonVariant: 'contained',
+        buttonVariant: 'outlined',
     },
     {
-        title: 'Список на выдачу СИЗ',
+        title: 'Архив',
         description: [
             '50 users included',
             '30 GB of storage',
             'Help center access',
             'Phone & email support',
         ],
-        buttonText: 'Открыть',
+        buttonText: 'Смотреть',
         buttonVariant: 'outlined',
     },
 ];
 
-function EmployeesCards (){
+function StandardCards (){
     return (
         <React.Fragment>
             <GlobalStyles styles={{ul: {margin: 0, padding: 0, listStyle: 'none'}}}/>
@@ -78,13 +78,11 @@ function EmployeesCards (){
                                 <CardContent>
                                     <Box
                                         sx={{
-                                            // component="h2",
-                                            // variant="h6,
-                                        display: 'flex',
-                                        justifyContent: 'left',
-                                        alignItems: 'baseline',
-                                        mb: 2
-                                    }}>
+                                            display: 'flex',
+                                            justifyContent: 'left',
+                                            alignItems: 'baseline',
+                                            mb: 2
+                                        }}>
                                     </Box>
                                     <ul>
                                         {tier.description.map((line) => (
@@ -110,6 +108,6 @@ function EmployeesCards (){
         </React.Fragment>
     );
 }
-export default function Pricing(){
-    return <EmployeesCards />;
+export default function StandardCard(){
+    return <StandardCards />;
 }
