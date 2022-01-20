@@ -16,6 +16,7 @@ import SignIn from "./forms/SignIn/SignIn";
 import CompanyEmployees from "./forms/CompanyEmployees/CompanyEmployees";
 import BtnHome from "./components/Button/BtnWarehouse";
 import Standard from "./forms/Standard/Standard";
+import NewEmployees from "./forms/NewEmployees/NewEmployees";
 
 
 
@@ -35,6 +36,7 @@ function App() {
             <SignUp/>
             <CompanyEmployees/>
            <Standard/>
+            <NewEmployees/>
             <Footer/>
         </div>
     );
