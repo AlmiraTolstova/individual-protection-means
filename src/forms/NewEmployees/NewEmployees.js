@@ -38,7 +38,7 @@ export default function NewEmployees() {
     });
 
     const handleChange = (prop) => (event) => {
-        setValues({ ...values, [prop]: event.target.value });
+        setValues({...values, [prop]: event.target.value});
     };
 
     const handleClickShowPassword = () => {
@@ -74,16 +74,19 @@ export default function NewEmployees() {
                             </Typography>
                             <SearchComponent/>
                         </div>
-                        <div className='newPerson__block2'>
 
-                        </div>
-                        <Box>
+                        <Box component="form"
+
+                             noValidate
+                             autoComplete="off">
                             <div className='newPerson__block2'>
-                            <TextField id="fullWidth" label="Фамилия" variant="outlined" />
-                            <TextField id="fullWidth" label="Имя" variant="outlined" />
+                                <TextField fullWidth id="fullWidth" label="Фамилия" variant="outlined"/>
+                                <TextField sx={{marginLeft: 2}} fullWidth id="fullWidth" label="Имя"
+                                           variant="outlined"/>
                             </div>
                             <div className='newPerson__block2'>
-                                <TextField label="Email" variant="outlined" helperText="Пожалуйста введите свой email"/>
+                                <TextField sx={{marginRight: 2}} fullWidth label="Email" variant="outlined"
+                                           helperText="Пожалуйста введите свой email"/>
                                 <FormControl>
                                     <FormLabel id="demo-controlled-radio-buttons-group">Пол</FormLabel>
                                     <RadioGroup
@@ -92,51 +95,54 @@ export default function NewEmployees() {
                                         value={value}
                                         onChange={handleChange}
                                     >
-                                        <FormControlLabel value="female" control={<Radio />} label="Мужчина" />
-                                        <FormControlLabel value="male" control={<Radio />} label="Женщина" />
+                                        <FormControlLabel value="female" control={<Radio/>} label="Мужчина"/>
+                                        <FormControlLabel value="male" control={<Radio/>} label="Женщина"/>
                                     </RadioGroup>
                                 </FormControl>
                             </div>
                             <div className='newPerson__block2'>
-                                <Autocomplete
+                                <Autocomplete fullWidth
+                                              sx={{marginRight: 2}}
                                     // disablePortal
-                                    id="combo-box-demo"
-                                    options={structuralSubdivision}
-                                    sx={{ width: 300 }}
-                                    renderInput={(params) => <TextField {...params} label="Структурное подразделение" />}
+                                              id="combo-box-demo"
+                                              options={structuralSubdivision}
+
+                                              renderInput={(params) => <TextField {...params}
+                                                                                  label="Структурное подразделение"/>}
                                 />
-                                <Autocomplete
-                                    disablePortal
-                                    id="combo-box-demo"
-                                    options={position}
-                                    sx={{ width: 300 }}
-                                    renderInput={(params) => <TextField {...params} label="Должность" />}
+                                <Autocomplete fullWidth
+                                              disablePortal
+                                              id="combo-box-demo"
+                                              options={position}
+
+                                              renderInput={(params) => <TextField {...params} label="Должность"/>}
                                 />
                             </div>
-                            <div>
+                            <div className='newPerson__block2'>
                                 <Autocomplete
                                     disablePortal
                                     id="combo-box-demo"
                                     options={clothingSize}
-                                    sx={{ width: 300 }}
-                                    renderInput={(params) => <TextField {...params} label="Размер одежды" />}
+                                    sx={{width: 300}}
+                                    renderInput={(params) => <TextField {...params} label="Размер одежды"/>}
                                 />
                                 <Autocomplete
                                     disablePortal
                                     id="combo-box-demo"
                                     options={shoeSize}
-                                    sx={{ width: 300 }}
-                                    renderInput={(params) => <TextField {...params} label="Размер обуви" />}
+                                    sx={{width: 300}}
+                                    renderInput={(params) => <TextField {...params} label="Размер обуви"/>}
                                 />
                                 <Autocomplete
                                     disablePortal
                                     id="combo-box-demo"
                                     options={gloveSize}
-                                    sx={{ width: 300 }}
-                                    renderInput={(params) => <TextField {...params} label="Размер рукавиц" />}
+                                    sx={{width: 300}}
+                                    renderInput={(params) => <TextField {...params} label="Размер рукавиц"/>}
                                 />
                             </div>
-                            <div> <FormControlLabel control={<Checkbox defaultChecked />} label="Согласие на обработку персональных данных" /></div>
+                            <div><FormControlLabel control={<Checkbox defaultChecked/>}
+                                                   label="Согласие на обработку персональных данных"/></div>
                         </Box>
                         <Button variant="contained" fullWidth>Сохранить</Button>
                     </Col>
@@ -148,36 +154,36 @@ export default function NewEmployees() {
 
 
 const structuralSubdivision = [
-    { label: 'Служба главного инженера' },
-    { label: 'Служба безопасности труда'},
-    { label: 'Служба производства'},
+    {label: 'Служба главного инженера'},
+    {label: 'Служба безопасности труда'},
+    {label: 'Служба производства'},
 ];
-const position=[
-    {label:'Инженер по автоматизации'},
-    {label:'Главный инженер'},
-    {label:'Руководитель сервисной службы'},
-    {label:'Наладчик(или слесарь) КИПиА'},
-    {label:'Инженер контролер'},
-    {label:'Лаборант'},
+const position = [
+    {label: 'Инженер по автоматизации'},
+    {label: 'Главный инженер'},
+    {label: 'Руководитель сервисной службы'},
+    {label: 'Наладчик(или слесарь) КИПиА'},
+    {label: 'Инженер контролер'},
+    {label: 'Лаборант'},
 ];
-const shoeSize=[
-    {label:'37'},
-    {label:'38'},
-    {label:'39'},
-    {label:'40'},
-    {label:'41'},
-    {label:'42'},
-    {label:'43'},
+const shoeSize = [
+    {label: '37'},
+    {label: '38'},
+    {label: '39'},
+    {label: '40'},
+    {label: '41'},
+    {label: '42'},
+    {label: '43'},
 ];
-const clothingSize=[
-    {label:'S'},
-    {label:'M'},
-    {label:'XL'},
-    {label:'XLL'},
+const clothingSize = [
+    {label: 'S'},
+    {label: 'M'},
+    {label: 'XL'},
+    {label: 'XLL'},
 ];
-const gloveSize=[
-    {label:'S'},
-    {label:'M'},
-    {label:'XL'},
-    {label:'XLL'},
+const gloveSize = [
+    {label: 'S'},
+    {label: 'M'},
+    {label: 'XL'},
+    {label: 'XLL'},
 ];
