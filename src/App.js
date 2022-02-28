@@ -20,15 +20,15 @@ import NewEmployees from "./forms/NewEmployees/NewEmployees";
 import Buy from "./forms/Buy/Buy";
 
 
-
-const useStyle=makeStyles({
-    helloThereStyle:{
-        fontsize:'20px',
-        color:"black"
+const useStyle = makeStyles({
+    helloThereStyle: {
+        fontsize: '20px',
+        color: "black"
     }
 })
+
 function App() {
-    const classes=useStyle();
+    const classes = useStyle();
     return (
         <div className="App">
             <Header/>
@@ -36,7 +36,7 @@ function App() {
             <SignIn/>
             <SignUp/>
             <CompanyEmployees/>
-           <Standard/>
+            <Standard/>
             <NewEmployees/>
             <Buy/>
             <Footer/>
